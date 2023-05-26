@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EconciliaApplication {
+public class ApplicationStarter {
 
 	public static void main(String[] args) {
 		System.out.println("teste...");
-		SpringApplication.run(EconciliaApplication.class, args);
+		SpringApplication.run(ApplicationStarter.class, args);
 	}
 
 }

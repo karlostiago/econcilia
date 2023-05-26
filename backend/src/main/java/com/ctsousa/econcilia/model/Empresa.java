@@ -1,4 +1,4 @@
 package com.ctsousa.econcilia.model;
 
-public class Contrato {
+public class Empresa {
 }

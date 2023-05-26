@@ -1,4 +1,4 @@
 package com.ctsousa.econcilia.repository;
 
-public interface ContratoRepository {
+public interface EmpresaRepository {
 }
