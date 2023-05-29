@@ -33,3 +33,8 @@
 .navbar-menu.hidden {
     transform: translateX(-400px);
 }
+
+.navbar-translateX {
+    transition: margin-left 1s;
+    margin-left: 400px;
+}
