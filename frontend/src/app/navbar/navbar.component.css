@@ -1,0 +1,35 @@
+.navbar-title {
+    color: #fff;
+    position: absolute;
+    left: 80px;
+}
+
+.navbar-menu {
+    min-height: 100%;
+    width: 400px;
+    background: #501111;
+    border: 1px solid #701717;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    text-align: center;
+    transition: transform 1s;
+}
+
+.navbar-menu-title {
+    color: #fff;
+    padding: 15px;
+}
+
+.navbar-divisor {
+    border-bottom: 1px solid #701717;
+}
+
+.navbar-menu.block {
+    transform: translateX(0px);
+}
+
+.navbar-menu.hidden {
+    transform: translateX(-400px);
+}
