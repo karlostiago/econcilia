@@ -5,9 +5,13 @@
 @import "primeicons/primeicons.css";
 
 body {
-  font-family: var(--font-family);
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .bg-dark.wine {
     background-color: #701717 !important;
+}
+
+.color-wine {
+    color: #701717;
 }
