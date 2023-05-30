@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {environment} from "../../../../environments/environment";
 
 @Component({
   selector: 'app-operadora-cadastro',
@@ -8,6 +9,10 @@ import {Component, OnInit} from '@angular/core';
 export class OperadoraCadastroComponent implements OnInit {
 
     taxas: any;
+
+    constructor() {
+        // environment.apiUrl
+    }
 
     ngOnInit(): void {
         this.taxas = [
