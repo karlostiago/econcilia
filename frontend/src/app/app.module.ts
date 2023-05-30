@@ -7,19 +7,21 @@ import {ButtonModule} from "primeng/button";
 import { NavbarComponent } from './navbar/navbar.component';
 import {EmpresaModule} from "./empresa/empresa.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ContratoModule} from "./contrato/contrato.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    InputTextModule,
-    ButtonModule,
-    EmpresaModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        InputTextModule,
+        ButtonModule,
+        EmpresaModule,
+        ContratoModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

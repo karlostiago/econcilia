@@ -10,8 +10,6 @@ export class EmpresaCadastroComponent implements OnInit {
 
     estados: any[];
 
-    estadoSelecionado: Estado;
-
     ngOnInit(): void {
         this.estados = [
             { label: "", value: 0 },

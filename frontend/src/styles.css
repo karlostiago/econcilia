@@ -4,7 +4,7 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
-body {
+body, table {
     font-family: 'Ubuntu', sans-serif !important;
     background-color: #f1f4f6;
 }
@@ -74,4 +74,9 @@ input {
 
 .p-button-danger.p-button-outlined:hover {
     background: rgba(239, 68, 68, 0.04)!important;
+}
+
+.p-dropdown .p-dropdown-trigger {
+    background: #701717!important;
+    color: #fff!important;
 }
