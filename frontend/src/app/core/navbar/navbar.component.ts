@@ -22,6 +22,8 @@ export class NavbarComponent implements OnInit {
         if (tituloNovo.length !== 0) {
             this.titulo = `/Tela de ${this.retornaPrimeiraLetraMaiusculo(tituloNovo).concat(this.retornaPalavraSemPrimeiraLetra(tituloNovo))}`;
         }
+
+        this.exibirMenuLateral = false;
     }
 
     private retornaPrimeiraLetraMaiusculo(str: string) {

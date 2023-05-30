@@ -6,12 +6,12 @@
 
         <div class="card-body">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <label class="form-label">Empresa:</label>
                     <p-dropdown styleClass="w-100" name="empresa" id="empresa" [options]="empresas" placeholder="Selecione uma empresa"></p-dropdown>
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <label class="form-label">Operadora:</label>
                     <p-dropdown styleClass="w-100" name="operadora" id="operadora" [options]="operadoras" placeholder="Selecione uma operadora"></p-dropdown>
                 </div>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="card-body">
-            <p-table [value]="taxas" [tableStyle]="{ 'min-width': '50rem' }" [paginator]="true" [rows]="10" styleClass="p-datatable-striped p-datatable">
+            <p-table [value]="taxas" [tableStyle]="{ 'min-width': '50rem' }" [paginator]="true" [rows]="10" styleClass="p-datatable-striped p-datatable p-datatable-gridlines">
                 <ng-template pTemplate="header">
                     <tr>
                         <th>Descrição</th>
@@ -43,7 +43,7 @@
 
                 <ng-template pTemplate="body" let-taxa>
                     <tr>
-                        <td> {{ taxa["descricao"] }} </td>
+                        <td class="w-75"> {{ taxa["descricao"] }} </td>
                         <td class="text-end"> {{ taxa["valor"] }} </td>
                         <td class="text-center">
                             <span class=" {{ taxa['ativo'] == true ? 'badge text-bg-success' : 'badge text-bg-danger' }} ">
@@ -56,13 +56,11 @@
         </div>
 
         <div class="card-footer">
-            <div class="row">
-                <div class="col-2">
-                    <button pButton class="p-button-danger p-button-sm" style="width: 100%;" label="Salvar"></button>
-                </div>
-                <div class="col-2">
-                    <button pButton class="p-button-danger p-button-sm p-button-outlined" style="width: 100%" label="Voltar"></button>
-                </div>
+            <div class="card-action">
+                <button pButton class="p-button-danger p-button-sm" icon="pi pi-save" label="Salvar"></button>
+                <button pButton class="p-button-danger p-button-sm p-button-outlined" icon="pi pi-replay" label="Voltar"></button>
+
+                <button pButton class="p-button-danger p-button-sm float-end" icon="pi pi-trash" label="Limpar"></button>
             </div>
         </div>
     </div>

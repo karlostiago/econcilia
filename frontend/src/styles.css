@@ -25,7 +25,9 @@ input {
 
 .main {
     min-height: 100vh;
+    padding-bottom: 20px;
 }
+
 /**
  * CARD
  */
@@ -50,6 +52,10 @@ input {
     border: 1px solid rgba(26, 54, 126, 0.125) !important;
 
     box-shadow: 0 5px 10px #787676;
+}
+
+.card-action button ~ button {
+    margin-left: 10px;
 }
 
 /**
@@ -82,4 +88,19 @@ input {
 .p-dropdown .p-dropdown-trigger {
     background: #701717!important;
     color: #fff!important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td,
+.p-datatable .p-datatable-thead > tr > th {
+    padding: 10px !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+    background-color: #701717!important;
+    color:#fff !important;
+    font-weight: normal!important;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: #701717!important;
 }
