@@ -6,6 +6,12 @@
 
 body {
     font-family: 'Ubuntu', sans-serif !important;
+    background-color: #f1f4f6;
+}
+
+label,
+input {
+    color: rgba(0, 0, 0, 0.54) !important;
 }
 
 .bg-dark.wine {
@@ -14,4 +20,58 @@ body {
 
 .color-wine {
     color: #701717;
+}
+
+
+/**
+ * CARD
+ */
+.card,
+.card-header {
+    border-radius: 0 !important;
+}
+
+.card-header {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(26, 54, 126, 0.125);
+}
+
+.card-footer{
+    background-color: #fff !important;
+    border-top: 1px solid rgba(26, 54, 126, 0.125);
+}
+
+.card {
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border: 1px solid rgba(26, 54, 126, 0.125) !important;
+
+    box-shadow: 0 5px 10px #787676;
+}
+
+/**
+ * CUSTOM PRIMENG
+ */
+.p-button-label {
+    font-weight: normal !important;
+}
+
+.p-button-danger {
+    background-color: #701717!important;
+    border: 1px solid #701717 !important;
+}
+
+.p-button-danger:hover {
+    background-color: #873535!important;
+    border: 1px solid #873535 !important;
+}
+
+.p-button-danger.p-button-outlined {
+    background-color: transparent!important;
+    color: #701717!important;
+    border: 1px solid!important;
+}
+
+.p-button-danger.p-button-outlined:hover {
+    background: rgba(239, 68, 68, 0.04)!important;
 }

@@ -5,6 +5,8 @@ import {AppComponent} from './app.component';
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import { NavbarComponent } from './navbar/navbar.component';
+import {EmpresaModule} from "./empresa/empresa.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    EmpresaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
