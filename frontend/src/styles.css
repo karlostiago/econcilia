@@ -31,6 +31,14 @@ input {
     width: 10%!important;
 }
 
+.w-15 {
+    width: 15%!important;
+}
+
+.w-50 {
+    width: 50%!important;
+}
+
 /**
  * CARD
  */
