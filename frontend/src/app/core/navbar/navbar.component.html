@@ -15,10 +15,10 @@
                     <a href="#" (click)="atualizarTitulo('', $event)"> <i class="pi pi-home"></i> Inicial </a>
                 </li>
                 <li>
-                    <a href="#" (click)="atualizarTitulo('Cadastro Empresas', $event)"> <i class="pi pi-building"></i> Empresa </a>
+                    <a routerLink="/empresas/novo" (click)="atualizarTitulo('Cadastro Empresas', $event)"> <i class="pi pi-building"></i> Empresa </a>
                 </li>
                 <li>
-                    <a href="#" (click)="atualizarTitulo('Cadastro Contratos', $event)"> <i class="pi pi-book"></i> Contrato </a>
+                    <a routerLink="/contratos/novo" (click)="atualizarTitulo('Cadastro Contratos', $event)"> <i class="pi pi-book"></i> Contrato </a>
                 </li>
             </ul>
         </div>
