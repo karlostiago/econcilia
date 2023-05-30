@@ -11,10 +11,13 @@ import {CoreModule} from "./core/core.module";
 import {RouterModule, Routes} from "@angular/router";
 import {EmpresaCadastroComponent} from "./features/empresa/empresa-cadastro/empresa-cadastro.component";
 import {ContratoCadastroComponent} from "./features/contrato/contrato-cadastro/contrato-cadastro.component";
+import {OperadoraCadastroComponent} from "./features/operadora/operadora-cadastro/operadora-cadastro.component";
+import {OperadoraModule} from "./features/operadora/operadora.module";
 
 const rotas: Routes = [
     { path: 'empresas/novo', component: EmpresaCadastroComponent },
-    { path: 'contratos/novo', component: ContratoCadastroComponent }
+    { path: 'contratos/novo', component: ContratoCadastroComponent },
+    { path: 'operadoras/novo', component: OperadoraCadastroComponent }
 ]
 
 @NgModule({
@@ -28,6 +31,7 @@ const rotas: Routes = [
         ButtonModule,
         EmpresaModule,
         ContratoModule,
+        OperadoraModule,
         CoreModule,
         RouterModule.forRoot(rotas)
     ],

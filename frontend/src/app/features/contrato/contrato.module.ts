@@ -7,8 +7,6 @@ import {ButtonModule} from "primeng/button";
 import {InputSwitchModule} from "primeng/inputswitch";
 import {TableModule} from "primeng/table";
 
-
-
 @NgModule({
     declarations: [
         ContratoCadastroComponent

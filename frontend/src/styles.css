@@ -22,10 +22,13 @@ input {
     color: #701717;
 }
 
-
 .main {
     min-height: 100vh;
     padding-bottom: 20px;
+}
+
+.w-10 {
+    width: 10%!important;
 }
 
 /**
@@ -63,6 +66,10 @@ input {
  */
 .p-button-label {
     font-weight: normal !important;
+}
+
+.p-button.p-button-sm {
+    padding: 0.3232rem 0.9898rem!important;
 }
 
 .p-button-danger {
