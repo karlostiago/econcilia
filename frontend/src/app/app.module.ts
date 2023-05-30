@@ -4,15 +4,14 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
-import { NavbarComponent } from './navbar/navbar.component';
-import {EmpresaModule} from "./empresa/empresa.module";
+import {EmpresaModule} from "./features/empresa/empresa.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {ContratoModule} from "./contrato/contrato.module";
+import {ContratoModule} from "./features/contrato/contrato.module";
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent
+    AppComponent
   ],
     imports: [
         BrowserModule,
@@ -20,7 +19,8 @@ import {ContratoModule} from "./contrato/contrato.module";
         InputTextModule,
         ButtonModule,
         EmpresaModule,
-        ContratoModule
+        ContratoModule,
+        CoreModule
     ],
   providers: [],
   bootstrap: [AppComponent]
